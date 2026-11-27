@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0C0B0D"><meta name="description" content="Contact Oddly Alike support and find instructions for AI permissions, data deletion, wallet accounts and subscriptions."><title>Support — Oddly Alike</title><link rel="icon" href="../assets/brand/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="../typography.css"><link rel="stylesheet" href="../legal.css"></head>
+<body class="legal-page" id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap header-content"><a class="wordmark" href="../">Oddly Alike</a><nav class="site-nav" aria-label="Main navigation"><a href="../privacy/">Privacy</a><a href="../">Home</a></nav></div></header>
+<main class="legal-shell support-shell" id="main" tabindex="-1">
+  <div class="legal-title"><h1>Support</h1><p class="intro">Questions about Oddly Alike, your data or a purchase? Get in touch.</p></div>
+  <div class="legal-copy">
+    <section id="contact"><h2>Contact the developer</h2><p>Send a message to Ievgenii Iablonskyi, the developer of Oddly Alike. We’ll reply to the email you provide. For a technical issue, include your app version, iOS version and a brief description.</p>
+      <form class="support-form" method="post" action="/api/support" data-support-form data-endpoint="https://us-central1-her-companion-7m4q.cloudfunctions.net/herWebsiteSupport" aria-describedby="support-form-note">
+        <div class="support-fields">
+          <div class="support-field"><label for="support-name">Name <span>(optional)</span></label><input id="support-name" name="name" type="text" autocomplete="name" maxlength="80"></div>
+          <div class="support-field"><label for="support-email">Your email</label><input id="support-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+          <div class="support-field support-wide"><label for="support-topic">What can we help with?</label><select id="support-topic" name="topic"><option value="support">General support</option><option value="privacy">Privacy request</option><option value="deletion">Data deletion request</option><option value="purchase">Purchase issue</option></select></div>
+          <div class="support-field support-wide"><label for="support-message">Message</label><textarea id="support-message" name="message" rows="7" minlength="10" maxlength="4000" aria-describedby="support-message-note" required></textarea><p id="support-message-note" class="support-hint">10–4,000 characters. Please don’t include passwords, payment-card details or recovery keys.</p></div>
+          <div class="support-trap" aria-hidden="true"><label for="support-company">Company</label><input id="support-company" name="company" type="text" tabindex="-1" autocomplete="off" maxlength="120"></div>
+        </div>
+        <input type="hidden" name="startedAt">
+        <p id="support-form-note" class="support-hint">Your email and message are processed by our support backend and Resend to deliver your request. Read the <a href="../privacy/#information">Privacy Policy</a>. This form is not an emergency service.</p>
+        <button class="button button-light" type="submit" disabled>Send message</button>
+        <p class="support-status" data-support-status role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+      <noscript><p>Enable JavaScript to use this form. You can also contact the developer using Contact Support in the app’s Settings.</p></noscript>
+      <p>You can also use <strong>Contact Support</strong> in the app’s Settings to prepare an email with an editable system report. Review that report and remove anything you do not want to send.</p>
+    </section>
+    <section id="ai-permission"><h2>Manage AI data sharing</h2><p>Open <strong>Settings → My Data → OpenAI Data Sharing</strong> in the app. Turning it off pauses AI chat, memory processing, dictation and photo generation. You can still read saved conversations. This permission does not control Firebase Analytics, wallet records or messages you send to support.</p><p>See the <a href="../privacy/#ai">AI processing section</a> of the Privacy Policy for what is shared and why.</p></section>
+    <section id="delete-data"><h2>Delete your workspace or wallet</h2><ul><li><strong>Workspace and backup:</strong> choose <strong>Delete All My Data</strong> in Settings and confirm. Keep the app available while any cloud deletion is pending.</li><li><strong>Wallet account:</strong> if signed in with Apple for the wallet, use its separate <strong>Delete Wallet Account</strong> control in Settings. Closing the wallet does not erase your device workspace.</li><li><strong>Other records:</strong> use the form above to ask about guest, service-side or support records you want reviewed for deletion. We may need to verify the request, and some purchase, security or legally required records may remain.</li></ul><p>These actions do not cancel an Apple subscription. The <a href="../privacy/#deletion">Privacy Policy’s deletion section</a> explains the separate steps and limits.</p></section>
+    <section id="subscriptions"><h2>Subscriptions and purchase issues</h2><p>Manage or cancel a subscription through your Apple Account. <a href="https://support.apple.com/118428">Apple explains how to cancel a subscription</a>. For refund requests, use <a href="https://reportaproblem.apple.com/">Apple’s Report a Problem service</a>. Use the form above if a verified purchase or credit balance is not appearing correctly in the app.</p></section>
+    <section id="reports"><h2>Report an AI response or photo</h2><p>Use the reporting action associated with that response or image in the app. A report sends the selected AI content and any comment you add to the developer for review. The <a href="../privacy/#information">Privacy Policy</a> describes these reports and support communications. Read <a href="../safety/">AI and safety</a> for the current safety features and their limitations.</p></section>
+  </div>
+</main>
+<footer class="site-footer"><div class="wrap footer-content"><a class="wordmark" href="../">Oddly Alike</a><nav aria-label="Footer navigation"><a href="../privacy/">Privacy Policy</a><a href="../support/" aria-current="page">Support</a><a href="../safety/">AI and safety</a><a href="#top">Back to top ↑</a></nav></div></footer>
+<script src="../support-form.js" defer></script>
+</body></html>

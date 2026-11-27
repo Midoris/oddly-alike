@@ -1,0 +1,18 @@
+:root {--base:#0C0B0D; --panel:#141315; --text:#F7F7F7; --secondary:#C6C2BD; --accent:#F5D1A3; --button:#F5D1A3; --line:#38312A; --glow:#3C332650;}
+/* Selected Soft Amber palette. Layout and copy are defined in styles.css and index.html. */
+:root { color-scheme:dark; --paper:var(--base); --ink:var(--text); --muted:var(--secondary); --rose:var(--accent); --dark:var(--base); --ivory:var(--text); --blush:var(--accent); --on-dark:var(--secondary); }
+body { background:var(--base); color:var(--text); }
+.site-header,.site-footer,.world,.invitation { background:var(--base); color:var(--text); }
+.opening { background:radial-gradient(ellipse at 76% 100%,var(--glow),transparent 60%),var(--base); }
+.meeting { background:var(--panel); }
+.meeting-copy { color:var(--secondary); }
+.meeting .eyebrow { color:var(--accent); }
+.meeting-mark { filter:none; opacity:1; }
+.text-emphasis { color:var(--text); border-color:var(--accent); }
+.header-content,.footer-content,.world-photo-note { border-color:var(--line); }
+.motion-button:hover { background:#ffffff0d; }
+.button-light { background:var(--button); color:var(--base); }
+.button-light:hover { background:color-mix(in srgb,var(--button) 90%,white); }
+.memory-rule { background:var(--accent); }
+::selection { background:var(--accent); color:var(--base); }
+.hero-image,.moment-image,.world-image { background:var(--panel); }

@@ -1,0 +1,19 @@
+/* Selected SF Pro Rounded typography. Uses local fonts with system fallbacks. */
+@font-face{font-family:OddlyRounded;src:local("SFProRounded-Semibold"),local("SF Pro Rounded Semibold");font-weight:600;font-style:normal}
+@font-face{font-family:OddlyText;src:local("SFProText-Regular"),local("SF Pro Text Regular");font-weight:400;font-style:normal}
+@font-face{font-family:OddlyText;src:local("SFProText-Semibold"),local("SF Pro Text Semibold");font-weight:600;font-style:normal}
+:root{--type-display:OddlyRounded,ui-rounded,system-ui,sans-serif;--type-body:OddlyText,-apple-system,system-ui,sans-serif;--type-weight:600;--type-size:6.3vw;--type-tracking:-.045em;}
+:root{--display:var(--type-display);--body:var(--type-body)}
+body{font-family:var(--body);font-size:17px;line-height:1.7}
+h1,h2{font-family:var(--display);font-weight:var(--type-weight);font-style:normal;letter-spacing:var(--type-tracking);line-height:1.06}
+h1 em,h2 em{font-style:normal;font-weight:inherit}
+.hero h1{font-size:clamp(56px,var(--type-size),90px);line-height:1.04;letter-spacing:var(--type-tracking)}
+h2,.world h2,.memory h2,.questions h2,.invitation h2{font-size:clamp(40px,4.1vw,60px);line-height:1.09;letter-spacing:-.035em}
+.wordmark{font-family:var(--display);font-weight:var(--type-weight);letter-spacing:-.045em}
+.memory-moment{font-family:var(--display);font-weight:var(--type-weight);font-size:clamp(24px,2.2vw,30px);line-height:1.4;letter-spacing:-.025em}
+.eyebrow{font-family:var(--body);font-weight:600;letter-spacing:.15em}
+.button,.question-list summary{font-weight:600}
+@media(max-width:1000px) and (min-width:761px){.hero h1{font-size:6.3vw}.moment h2,.invitation h2{font-size:4.1vw}}
+@media(max-width:760px){body{font-size:16px}.hero h1{font-size:clamp(44px,13.8vw,72px)}h2,.world h2,.memory h2,.questions h2,.invitation h2{font-size:clamp(40px,8vw,54px)}.memory-moment{font-size:25px}}
+@media(max-width:360px){.hero h1{font-size:13.8vw}}
+@media(min-width:761px) and (max-height:800px){.hero h1{font-size:clamp(56px,6vw,84px)}}
