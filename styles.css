@@ -122,8 +122,9 @@ section[id]:focus, main:focus { outline: none; }
 .world-image img { width: 100%; height: 100%; object-fit: cover; object-position: 48% center; }
 .world-figure figcaption { color: var(--on-dark); font-size: 11px; }
 .world-photo-note { display: grid; grid-template-columns: 1fr 1.3fr; column-gap: clamp(70px, 10vw, 145px); margin-top: 71px; padding-top: 30px; border-top: 1px solid #f9ecda24; }
-.world-photo-note .eyebrow { max-width: 170px; margin: 0; padding-top: 5px; }
-.world-photo-note > p:last-child { color: var(--on-dark); font-size: 13px; line-height: 1.8; }
+.world-photo-note h3 { margin: 0; font: 600 clamp(24px, 2.35vw, 32px)/1.2 var(--display); letter-spacing: -.025em; }
+.world-photo-note h3 span { display: block; color: var(--blush); }
+.world-photo-note > p { max-width: 600px; color: var(--on-dark); font-size: 16px; line-height: 1.7; }
 .memory { padding-block: clamp(94px, 10vw, 150px); }
 .memory-layout { max-width: 760px; text-align: center; }
 .memory .eyebrow { margin-bottom: 24px; }
@@ -221,8 +222,8 @@ section[id]:focus, main:focus { outline: none; }
   .world-image { aspect-ratio: 1.08; border-radius: 18px; }
   .world-story { max-width: 540px; margin-top: 29px; font-size: 16px; }
   .world-photo-note { grid-template-columns: 1fr; gap: 16px; margin-top: 40px; padding-top: 26px; }
-  .world-photo-note .eyebrow { max-width: none; padding: 0; }
-  .world-photo-note > p:last-child { max-width: 520px; font-size: 16px; }
+  .world-photo-note h3 { font-size: 26px; }
+  .world-photo-note > p { max-width: 520px; }
   .memory { padding-block: 85px; }
   .memory h2 { font-size: clamp(63px, 11vw, 85px); }
   .memory-moment { max-width: 480px; margin-top: 25px; font-size: 26px; }
